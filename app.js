@@ -23,7 +23,6 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('Mongo conectado'))
   .catch((err) => console.error('Error de conexión:', err));
 
-// Rutasconst imageRoutes = require('./routes/images');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/images', imageRoutes);
