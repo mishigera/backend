@@ -35,7 +35,7 @@ exports.uploadImage = async (req, res) => {
 
     if (effects.includes('quality')) {
       image.fisheye();
-      appliedEffects.push('quality:80');
+      appliedEffects.push('fiasheye');
     }
 
     await image.write(processedPath);
